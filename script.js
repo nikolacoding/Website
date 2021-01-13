@@ -66,10 +66,21 @@ function loopColor(elementID, interval){
     setInterval(function() { alternateColor(elementID); }, interval);
 }
 
+var timesShiftedBG = 1;
+
+function shiftNavBarBG(pixels){
+    navBar = document.getElementById("navbar");
+    navBar.style.backgroundPositionX = timesShiftedBG * pixels + "px";
+    timesShiftedBG++;
+}
+
 window.onload = function(){
     document.getElementById("usertable").innerHTML = table;
 
     loopColor("title", 75);
     loopColor("utheader", 75);
     loopColor("usertableheaderarrow", 90);
+    shiftNavBarBG(150)
+
+    setInterval(function() { shiftNavBarBG(10); }, 100);
 }
