@@ -1,0 +1,228 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url(../Site/Data/BG.jpg);
+    background-repeat: repeat;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+    cursor: default;
+    text-shadow: 3px 3px 2px black;
+    transition: 0.1s;
+    padding: 0px 20px 20px 0px;
+    text-align: center;
+    position: relative;
+    right: 0px;
+    top: -33px;
+}
+.navbar a:hover{
+    color:red;
+    text-shadow: 3px 3px 2px rgb(36, 36, 36);
+    right: -5px;
+}
+
+.navbar{
+    font-size: 30px;
+    font-family: Helvetica;
+    text-anchor: middle; 
+    background: linear-gradient(to left, white, orange);
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: url(Data/navbarBG.png);
+}
+
+.navbartext{
+    position: relative;
+    top: 0;
+    left: 50px;
+}
+
+.navbartext p{
+    position: fixed;
+    right: 5;
+    top: 0;
+    margin: 0;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+}
+
+.navbar img{
+    position: fixed;
+    height: 40px;
+    width: 30px;
+}
+
+table tr td{
+    padding: 5px;
+    text-align: left;
+}
+
+.dynamicTable{
+    position: relative;
+    top: 30px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.dynamicTable tr td{ /* Info text */
+    text-align: center;
+    font-size: 20px;
+    font-family: helvetica;
+    font-weight: bold;
+    padding: 5px 2px 2px 5px;
+    color: white;
+    text-shadow: 3px 3px 2px black;
+    cursor: default;
+    transition: 0.05s;
+}
+
+.dynamicTable tr td:hover{
+    color: gray;
+}
+
+.dtImage{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 100px;
+    position: relative;
+    top: 0;
+    transition: opacity 0.15s, border-radius 0.30s, top 0.2s;
+}
+
+.dtImage:hover{
+    cursor: not-allowed;
+    border-radius: 75px;
+    opacity: 0.75;
+    top: -5px;
+}
+
+.userstitle{
+    position: fixed;
+    top: 30px;
+    font-size: 30px;
+    font-family: helvetica;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    text-shadow: 3px 3px 2px black;
+}
+
+.usertableheader{
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: helvetica;
+    text-shadow: 2px 2px 2px white;
+    cursor: default;
+    transition: top 0.5s;
+    z-index: 2;
+}
+
+.usertableheader:hover{
+    position: relative;
+    top: 60px;
+}
+
+#usertableheaderarrow{
+    position: relative;
+    top: -10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: helvetica;
+    text-shadow: 2px 2px 2px white;
+    cursor: default;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.usertableheader:hover ~ #usertableheaderarrow{
+    opacity: 1;
+    position: relative;
+    top: 3px;
+}
+
+/* DIV element, do not touch */
+#usertable{
+    height: 100px;
+    position: relative;
+    top: -50px;
+}
+
+.aboutheader{
+    position: relative;
+    top: 600px;
+    font-size: 100px;
+    color: white;
+    font-family: helvetica;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+#aboutcontent{
+    position: relative;
+    top: 500px;
+    font-size: 50px;
+    color: white;
+    font-family: helvetica;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    padding: 0px 100px 100px 20px;
+}
+
+.legalheader{
+    position: absolute;
+    padding-bottom: 20px;
+    top: -200px;
+    font-size: 80px;
+    color: white;
+    font-family: helvetica;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    margin-right: 0;
+    margin-left: 0;
+    left: 0;
+    right: 0;
+}
+
+#legalcontent{
+    position: absolute;
+    top: -60px;
+    font-size: 40px;
+    color: white;
+    font-family: helvetica;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    padding: 0px 100px 100px 20px;
+}
+
+.legaldiv{
+    position: relative;
+    top: 700px;
+    height: 300px;
+    width: 100%;
+}
+
+.copyright{
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    position: fixed;
+    left: 3px;
+    bottom: 0px;
+}
