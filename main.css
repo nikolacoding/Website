@@ -33,7 +33,7 @@ body{
     height: 40px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 5;
     z-index: 100;
     background: url(Data/navbarBG.png);
     transition: 1s;
@@ -146,11 +146,10 @@ table tr td{
     font-size: 60px;
     font-weight: bold;
     font-family: helvetica;
-    text-shadow: 2px 2px 2px white;
     cursor: default;
     opacity: 0;
     z-index: 1;
-    transition: 0.5s;
+    transition: opacity 0.5s, top 0.5s;
 }
 
 .usertableheader:hover ~ #usertableheaderarrow{
@@ -166,36 +165,44 @@ table tr td{
     top: -50px;
 }
 
-.aboutheader{
+.aboutdiv{
     position: relative;
-    top: 600px;
+    top: 500px;
+    margin: 0px 50px;
+
+    background: url(Data/aboutbg.png);
+    background-size:cover;
+}
+
+.aboutdiv #aboutheader{
+    font-family: helvetica;
     font-size: 100px;
     color: white;
-    font-family: helvetica;
     text-align: center;
     text-shadow: 2px 2px 2px black;
 }
 
-#aboutcontent{
-    position: relative;
-    top: 500px;
+.aboutdiv .legalp2{
+    font-family: helvetica;
     font-size: 50px;
     color: white;
-    font-family: helvetica;
     text-align: center;
     text-shadow: 2px 2px 2px black;
-    padding: 0px 100px 100px 20px;
+
+    position: relative;
+    bottom: 90px;
 }
 
 .legaldiv{
     position: relative;
-    top: 500px;
+    top: 700px;
+    margin: 0px 50px;
 
-    background: url(Data/warning.png);
+    background: url(Data/legalbg.png);
     background-size:cover;
 }
 
-.legaldiv #legalp1{
+.legaldiv #legalheader{
     font-family: helvetica;
     font-size: 100px;
     color: white;
