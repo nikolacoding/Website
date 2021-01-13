@@ -75,9 +75,9 @@ function shiftNavBarBG(pixels){
 window.onload = function(){
     document.getElementById("usertable").innerHTML = table;
 
-    loopColor("title", 75);
-    loopColor("utheader", 75);
-    loopColor("usertableheaderarrow", 90);
+    loopColor("title", 200);
+    loopColor("utheader", 200);
+    loopColor("usertableheaderarrow", 200);
     shiftNavBarBG(150)
 
     setInterval(function() { shiftNavBarBG(10); }, 100);
