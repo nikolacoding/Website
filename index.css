@@ -19,6 +19,7 @@ body{
     right: 0px;
     top: -33px;
 }
+
 #navbar a:hover{
     color:red;
     text-shadow: 3px 3px 2px rgb(36, 36, 36);
